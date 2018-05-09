@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default ({page, theme, open_graph}) => {
-  const title = `${page.title !== undefined ? `${page.title} | ` : ''}sititou70`;
+  const title = `${page.title !== undefined ? `${page.title} | ` : ''}takachan-mirai`;
 
   const head_html = `
     <meta charSet="UTF-8" />
@@ -13,7 +13,7 @@ export default ({page, theme, open_graph}) => {
     <link rel="stylesheet" href="/css/root.css" />
     <link rel="shortcut icon" type="image/x-icon" href="/css/images/favicon.ico" />
   `;
-  
+
   return (
     <head dangerouslySetInnerHTML={{__html: head_html}} />
   );

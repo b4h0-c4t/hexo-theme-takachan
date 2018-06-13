@@ -1,9 +1,0 @@
-@import "./_partial/PostNav.scss";
-
-.post{
-  article{
-    > *:first-child{
-      margin-top: $grid * 2;
-    }
-  }
-}

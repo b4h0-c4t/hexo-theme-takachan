@@ -13,8 +13,8 @@ export default props => {
       <body>
         <Header {...props} />
         <div className="container">
-          <main dangerouslySetInnerHTML={{__html: props.body}} />
-          <Aside {...props} />
+          <main className="main_contents" dangerouslySetInnerHTML={{__html: props.body}} />
+          <Aside className="aside" {...props} />
         </div>
         <Footer {...props} />
         <GoogleAnalytics {...props} />
@@ -22,4 +22,3 @@ export default props => {
     </html>
   );
 }
-

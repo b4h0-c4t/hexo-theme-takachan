@@ -2,7 +2,6 @@ import React from 'react';
 
 import Head from './_partial/Head.jsx';
 import Header from './_partial/Header.jsx';
-import Aside from './_partial/Aside.jsx';
 import Footer from './_partial/Footer.jsx';
 import GoogleAnalytics from './_partial/GoogleAnalytics.jsx';
 
@@ -14,7 +13,6 @@ export default props => {
         <Header {...props} />
         <div className="container">
           <main className="main_contents" dangerouslySetInnerHTML={{__html: props.body}} />
-          <Aside className="aside" {...props} />
         </div>
         <Footer {...props} />
         <GoogleAnalytics {...props} />

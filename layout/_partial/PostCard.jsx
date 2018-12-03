@@ -9,7 +9,7 @@ export default ({document, theme}) => {
     }
   : null;
   const image = content_image_tag != null
-    ? <img 
+    ? <img
         src={`${document.path}${image_attrs.src[1]}`}
         alt={image_attrs.alt[1]} />
     : null;
@@ -19,9 +19,9 @@ export default ({document, theme}) => {
   return (
     <a className="post_card" href={document.path}>
       {image}
-      <h2>{title}</h2>
-      <span>{document.date.format('YYYY/MM/DD')}</span>
-      <p>{intro}</p>
+      <h2 className="post_card__title">{title}</h2>
+      <time className="post_card__date">{document.date.format('YYYY/MM/DD')}</time>
+      <p className="post_card__intro">{intro}</p>
     </a>
   );
 }

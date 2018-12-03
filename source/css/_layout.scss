@@ -1,18 +1,7 @@
 @import "./_partial/header.scss";
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1000px;
 
   .main_contents {
-    background-color: $contents_bg_color;
   }
-
-  .aside {
-    background-color: $contents_bg_color;
-  }
-
 }

@@ -6,6 +6,10 @@ facebook_id: 827488554056254
 
 # UI
 postcard_intro_length: 140
+node_sass:
+  outputStyle: nested
+  precision: 5
+  sourceComments: false
 
 # other
 google_analytics_id: UA-116350727-1

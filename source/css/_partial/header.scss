@@ -4,12 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
-  background-color: #000;
-  background-image: url("../images/header.png");
-  background-size: contain;
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
+  height: 90vh;
   color: $lighter-text;
 
   &__main {

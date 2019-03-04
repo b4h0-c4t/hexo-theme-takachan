@@ -4,7 +4,7 @@ const PostLink = ({document, className}) => <a href={document.path} className={c
 
 export default ({page}) => {
   return (
-    <div className="post_nav">
+    <div className="postNav">
       { page.prev !== undefined ? <PostLink document={page.prev} className="prev" /> : null }
       { page.next !== undefined ? <PostLink document={page.next} className="next" /> : null }
     </div>

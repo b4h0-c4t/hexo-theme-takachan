@@ -1,7 +1,27 @@
 @import "./_partial/header.scss";
+@import "./_partial/footer.scss";
 
-.container {
-
-  .main_contents {
+html {
+  font-size: 16px;
+  @media screen and (max-width: 800px) {
+    font-size: 10px;
   }
+}
+
+.body {
+  background-color: #000;
+  background-image: url("../images/header.png");
+  background-size: contain;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main {
+  background-color: #eee;
+  margin: 0 auto;
+  padding: $grid;
+  width: calc(100% - #{$grid} * 4);
+  max-width: 900px;
+  border-radius: $grid;
 }

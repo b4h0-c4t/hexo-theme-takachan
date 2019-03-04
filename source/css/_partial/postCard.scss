@@ -1,0 +1,28 @@
+.postCard {
+  display: block;
+  border-radius: $grid;
+  padding: $grid;
+  text-decoration-line: none;
+  transition: 0.5s;
+  &:hover {
+    background-color: #ddd;
+  }
+  &:not(:last-child) {
+    border-bottom: dashed #ddd 3px;
+  }
+  &__title {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+    font-family: "游ゴシック", "Yu Gothic", "Yu-gothic", sans-serif;
+  }
+  &__date {
+    display: block;
+    text-align: right;
+    color: $lighter-text;
+  }
+  &__intro {
+    font-size: 1.5rem;
+    color: $lighter-text;
+  }
+}

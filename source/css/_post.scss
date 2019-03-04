@@ -1,0 +1,23 @@
+.post {
+  font-size: 1.5rem;
+  font-family: "游明朝", "Yu Mincho", "Yu-mincho", sans-serif;
+
+  h2, h3, h4 {
+    font-family: "游ゴシック", "Yu Gothic", "Yu-gothic", sans-serif;
+  }
+
+  p, figure {
+    margin-left: $grid;
+  }
+
+  h2 {
+    display: block;
+    border-bottom: solid 1px #666;
+    border-left: solid calc(#{$grid} * 2) #666;
+  }
+
+  figure {
+    border-left: solid calc(#{$grid}) #666;
+    padding-left: $grid;
+  }
+}

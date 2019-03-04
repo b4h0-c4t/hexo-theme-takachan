@@ -17,11 +17,11 @@ export default ({document, theme}) => {
   const intro = document.content.replace(/<.*?>/g, ' ').slice(0, theme.postcard_intro_length - 1) + '…';
 
   return (
-    <a className="post_card" href={document.path}>
+    <a className="postCard" href={document.path}>
       {image}
-      <h2 className="post_card__title">{title}</h2>
-      <time className="post_card__date">{document.date.format('YYYY/MM/DD')}</time>
-      <p className="post_card__intro">{intro}</p>
+      <h2 className="postCard__title">{title}</h2>
+      <time className="postCard__date">{document.date.format('YYYY/MM/DD')}</time>
+      <p className="postCard__intro">{intro}</p>
     </a>
   );
 }

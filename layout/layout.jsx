@@ -9,11 +9,9 @@ export default props => {
   return (
     <html>
       <Head {...props} />
-      <body>
+      <body className="body">
         <Header {...props} />
-        <div className="container">
-          <main className="main_contents" dangerouslySetInnerHTML={{__html: props.body}} />
-        </div>
+        <main className="main" dangerouslySetInnerHTML={{__html: props.body}} />
         <Footer {...props} />
         <GoogleAnalytics {...props} />
       </body>
